@@ -5,12 +5,10 @@ using UnityEditor;
 using UnityEditor.Build;
 using UnityEngine;
 
-namespace BAP.Build
-{
-    /// <summary>
-    /// Base class for build pipelines. Can be extended by projects to override specific build steps.
-    /// </summary>
-    public class BuildPipelineBase
+/// <summary>
+/// Base class for build pipelines. Can be extended by projects to override specific build steps.
+/// </summary>
+public class BuildPipelineBase
     {
         public virtual void BUILD_WIN() => BuildInternal(BuildTarget.StandaloneWindows64);
         public virtual void BUILD_OSX() => BuildInternal(BuildTarget.StandaloneOSX);
@@ -293,5 +291,4 @@ namespace BAP.Build
 #if UNITY_CLOUD_BUILD
         public static void PreExportStandalone(UnityEngine.CloudBuild.BuildManifestObject manifest) => Instance.PreExport(manifest);
 #endif
-    }
 }

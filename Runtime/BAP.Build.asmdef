@@ -1,6 +1,6 @@
 {
     "name": "BAP.Build",
-    "rootNamespace": "BAP.Build",
+    "rootNamespace": "",
     "references": [
         "UnityEngine.CloudBuild"
     ],

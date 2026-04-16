@@ -16,15 +16,15 @@ DevOps build pipeline tools for Unity projects.
 Execute Unity with the following method as the entry point:
 
 ```bash
-Unity -projectPath . -executeMethod BAP.Build.Build.BUILD_WIN -quit -batchmode
+Unity -projectPath . -executeMethod Build.BUILD_WIN -quit -batchmode
 ```
 
 Supported methods:
-- `BAP.Build.Build.BUILD_WIN`
-- `BAP.Build.Build.BUILD_OSX`
-- `BAP.Build.Build.BUILD_LINUX`
-- `BAP.Build.Build.BUILD_ANDROID`
-- `BAP.Build.Build.BUILD_IOS`
+- `Build.BUILD_WIN`
+- `Build.BUILD_OSX`
+- `Build.BUILD_LINUX`
+- `Build.BUILD_ANDROID`
+- `Build.BUILD_IOS`
 
 ### Environment Variables
 
@@ -41,8 +41,8 @@ Supported methods:
 To customize the build process, create a class that inherits from `BuildPipelineBase` anywhere in your project:
 
 ```csharp
-using BAP.Build;
 using UnityEditor;
+using UnityEditor.Build;
 
 public class MyCustomPipeline : BuildPipelineBase
 {
