@@ -1,5 +1,5 @@
 {
-  "name": "bap.buildpipeline",
+  "name": "bap.build",
   "version": "1.0.0",
   "displayName": "BAP Build",
   "description": "Devops build pipeline tools for BAP.",
