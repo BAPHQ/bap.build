@@ -1,0 +1,10 @@
+{
+  "name": "bap.buildpipeline",
+  "version": "1.0.0",
+  "displayName": "BAP Build",
+  "description": "Devops build pipeline tools for BAP.",
+  "author": {
+    "name": "BAP",
+    "url": "https://github.com/BAPHQ/bap.hfsm"
+  }
+}
